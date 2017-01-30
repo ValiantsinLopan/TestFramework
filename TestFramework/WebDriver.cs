@@ -27,7 +27,7 @@ namespace TestFramework
                 return driver;
             }
         }
-
+        
         public static void KillDriver()
         {
             driver.Quit();

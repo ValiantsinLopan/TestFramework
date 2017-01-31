@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;
-using TestFramework.Journal;
+using TestFramework.JournalClasses;
 
 namespace TestFramework
 {
@@ -14,36 +14,34 @@ namespace TestFramework
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 
-        public static List<string> GetJournalsNames()
+        public static IList<Excel.Worksheet> GetJournalsWorkSheets()
         {
             // Excel.Application excelApp = new Excel.Application();
             // Excel.Workbook excelWorkbook = excelApp.Workbooks.Open(filePath);
             excelApp = new Excel.Application();
             excelWorkbook = excelApp.Workbooks.Open(filePath);
             var excelSheets = excelWorkbook.Worksheets;
-            List<string> journals = new List<String>(); 
+            IList<Excel.Worksheet> journals = new List<Excel.Worksheet> (); 
             foreach (Excel.Worksheet worksheet in excelWorkbook.Worksheets)
             {
-                journals.Add(worksheet.Name);
+                journals.Add(worksheet);
             }
             return journals;
+            excelApp.Quit();
         }
         
-        public static Navigation GetNavigation(Excel.Worksheet worksheet)
+        public static  Navigation GetNavigation(Excel.Worksheet worksheet)
         {
             var navigation = new Navigation();
-  
-            
             int rowStart = 2;
             int columnStart = 1;
-            var range = worksheet.Cells[rowStart,columnStart];
-            //var menu = new Menu(range.Value.ToString());
+            Excel.Range range = worksheet.Cells[rowStart,columnStart];
+           
             while (range.Value != null )
             {
                 var menu = new Menu(range.Value.ToString());
                 rowStart++;
                 range = worksheet.Cells[rowStart, columnStart];
-                
                 while (range.Value!= null)
                 {
                     menu.AddMenuItem(range.Value.ToString());
@@ -56,7 +54,23 @@ namespace TestFramework
                 range = worksheet.Cells[rowStart, columnStart];
             }
             return navigation;
+            
         }
+
+
+        public  List<Journal> GetJournal()
+        {
+            IList<Excel.Worksheet> journalSheets = GetJournalsWorkSheets();
+            List<Journal> journals = new List<Journal>();
+            int countOfJournals = journalSheets.Count;
+            foreach(Excel.Worksheet journalSheet in journalSheets)
+            {
+                string name = journalSheet.Name;
+                journals.Add(new Journal(name,GetNavigation(journalSheet)));
+            }
+           
+            return journals;
+        } 
         
     }
        

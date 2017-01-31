@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;
+using TestFramework.JournalClasses;
+
+
 
 
 namespace TestFramework.Tests
@@ -13,27 +16,58 @@ namespace TestFramework.Tests
     [TestClass()]
     public class ExcelWorkerTests
     {
-        [TestMethod()]
-        public void GetJournalsNamesTest()
+        public static string filePath = @"D:\Data for training\Styling\Responsive-Batch-6.xlsx";
+        public static Excel.Application excelApp;
+        public static Excel.Workbook excelWorkbook;
+
+        public static List<Excel.Worksheet> GetJournalsWorkSheets()
         {
-            List<string> jorn = ExcelWorker.GetJournalsNames();
-            foreach (string jo in jorn)
+            // Excel.Application excelApp = new Excel.Application();
+            // Excel.Workbook excelWorkbook = excelApp.Workbooks.Open(filePath);
+            excelApp = new Excel.Application();
+            excelWorkbook = excelApp.Workbooks.Open(filePath);
+            var excelSheets = excelWorkbook.Worksheets;
+            List<Excel.Worksheet> journals = new List<Excel.Worksheet>();
+            foreach (Excel.Worksheet worksheet in excelWorkbook.Worksheets)
             {
-                Console.WriteLine(jo.ToString());
-                Console.ReadKey();
+                journals.Add(worksheet);
             }
+            return journals;
         }
 
-      /*  [TestMethod()]
-        public void GetNavigationTest()
+        [TestMethod()]
+        public void GetJournalsWorkSheetsTest()
         {
-            List<string> jorn = ExcelWorker.GetNavigation();
-            foreach (string jo in jorn)
+            var jorn = GetJournalsWorkSheets();
+
+            foreach (var jo in jorn)
             {
                 Console.WriteLine(jo.ToString());
-                Console.ReadKey();
+
             }
+            Console.ReadKey();
         }
-        */
+
+        [TestMethod()]
+        public void GetNavigationTest()
+        {
+            string filePath = @"D:\Data for training\Styling\Responsive-Batch-6.xlsx";
+            Excel.Application excelApp;
+            Excel.Workbook excelWorkbook;
+            excelApp = new Excel.Application();
+            excelWorkbook = excelApp.Workbooks.Open(filePath);
+            var excelSheet = excelWorkbook.Worksheets;
+            Navigation nav = new Navigation();
+            
+        }
+            
+        
+
+
+        [TestMethod()]
+        public void GetJournalTest()
+        {
+            Assert.Fail();
+        }
     }
 }

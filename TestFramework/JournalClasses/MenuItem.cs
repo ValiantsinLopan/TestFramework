@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestFramework.Journal
+namespace TestFramework.JournalClasses
 {
     public class MenuItem
     {
         public string Name { get; set; }
         public MenuItem(string name )
         {
-            name = Name;
+            Name = name;
         }
         
     }

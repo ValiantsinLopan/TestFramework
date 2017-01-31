@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestFramework.Journal
+namespace TestFramework.JournalClasses
 {
     public class Navigation
     {
-        public List<Menu> menu;
+        public List<Menu> menu = new List<Menu>();
         public Navigation()
         {
         }

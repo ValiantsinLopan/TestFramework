@@ -56,11 +56,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExcelGetter.cs" />
     <Compile Include="ExcelWorker.cs" />
-    <Compile Include="Journal\Menu.cs" />
-    <Compile Include="Journal\MenuItem.cs" />
-    <Compile Include="Journal\Journal.cs" />
-    <Compile Include="Journal\Navigation.cs" />
+    <Compile Include="JournalClasses\Menu.cs" />
+    <Compile Include="JournalClasses\MenuItem.cs" />
+    <Compile Include="JournalClasses\Journal.cs" />
+    <Compile Include="JournalClasses\Navigation.cs" />
     <Compile Include="TestData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

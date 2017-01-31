@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestFramework.Journal
+namespace TestFramework.JournalClasses
 {
      public class Menu
     {
         public static string Name { get; set; }
-        public List<MenuItem> menuItem;
+        public List<MenuItem> menuItem = new List<MenuItem>();
         public Menu(string name)
         {
-            name = Name;
+            Name = name;
             
         }
-        public void AddMenuItem(MenuItem item)
+        public void AddMenuItem(string item)
         {
-            menuItem.Add(item);
+            menuItem.Add(new MenuItem(item));
         }
 
     }

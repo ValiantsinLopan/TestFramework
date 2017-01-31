@@ -9,3 +9,15 @@ C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\Te
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.TestData.resources
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\TestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\TestFramework.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\nunit.framework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\nunit.framework.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.csproj.ResolveComReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.TestData.resources
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.csproj.GenerateResource.Cache
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.pdb

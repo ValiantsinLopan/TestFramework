@@ -15,7 +15,7 @@ namespace TestFramework.Tests
     public class ExcelWorkerTests
     {
         [TestMethod()]
-        public  void GetJournalsWorkSheetsTest()
+        public void GetJournalsWorkSheetsTest()
         {
             IList<Excel.Worksheet> test = ExcelWorker.GetJournalsWorkSheets();
             foreach (Excel.Worksheet t in test)
@@ -28,11 +28,19 @@ namespace TestFramework.Tests
         [TestMethod()]
         public void GetNavigationTest()
         {
-            string filePath = "D:/Data for training/Styling/Responsive-Batch-6.xlsx";
+            string filePath = "D:/VALIANTSIN/TAT LAB/TestFramework task/Styling/Responsive-Batch-6.xlsx";
 
-           var workSheet = ExcelGetter.GetWorkSheet("lbjnewsletter", filePath);
+            var workSheet = ExcelGetter.GetWorkSheet("lbjnewsletter", filePath);
             Navigation nav = ExcelWorker.GetNavigation(workSheet);
             Console.WriteLine(nav.ToString());
+
+        }
+
+        [TestMethod()]
+        public void GetJournalTest()
+        {
+            List<Journal> jrn = ExcelWorker.GetJournal();
+            Console.WriteLine(jrn[1].nav.menu[0].menuItem[0].ToString());
         }
     }
 }

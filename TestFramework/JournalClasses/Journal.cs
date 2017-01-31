@@ -15,6 +15,10 @@ namespace TestFramework.JournalClasses
             this.Name = Name;
             this.nav = nav;    
         }
+        public static string GetURL()
+        {
+            return Name;
+        }
     }
 
 }

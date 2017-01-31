@@ -19,6 +19,9 @@ namespace TestFramework.JournalClasses
         {
             menuItem.Add(new MenuItem(item));
         }
-
+        public static string GetName()
+        {
+            return Name;
+        }
     }
 }

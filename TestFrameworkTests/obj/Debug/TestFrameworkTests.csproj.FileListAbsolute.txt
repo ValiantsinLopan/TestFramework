@@ -9,3 +9,15 @@ C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\Te
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests1\obj\Debug\TestFrameworkTests.csproj.ResolveComReference.cache
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests1\obj\Debug\TestFrameworkTests1.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests1\obj\Debug\TestFrameworkTests1.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\TestFrameworkTests1.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\TestFrameworkTests1.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\TestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\TestFramework.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests.csprojResolveAssemblyReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests.csproj.ResolveComReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests1.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests1.pdb

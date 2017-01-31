@@ -16,8 +16,11 @@ namespace TestFramework.Tests
         [TestMethod()]
         public void GetWorkSheetTest()
         {
-            Excel.Worksheet sh = ExcelGetter.GetWorkSheet("nursingmadeincrediblyeasy", "D:/Data for training/Styling/Responsive-Batch-6.xlsx");
+            Excel.Worksheet sh = ExcelGetter.GetWorkSheet("nursingmadeincrediblyeasy", "D:/VALIANTSIN/TAT LAB/TestFramework task/Styling/Responsive-Batch-6.xlsx");
             Console.WriteLine(sh.Name);
+            string expected = "nursingmadeincrediblyeasy";
+            string actual = sh.Name.ToString();
+            Assert.AreEqual(expected,actual,"Name of sheet not found");
         }
     }
 }

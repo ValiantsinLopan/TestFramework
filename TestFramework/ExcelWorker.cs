@@ -10,14 +10,12 @@ namespace TestFramework
 {
     public class ExcelWorker
     {
-        public static string filePath = @"D:\Data for training\Styling\Responsive-Batch-6.xlsx";
+        public static string filePath = "D:/VALIANTSIN/TAT LAB/TestFramework task/Styling/Responsive-Batch-6.xlsx";
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 
         public static IList<Excel.Worksheet> GetJournalsWorkSheets()
-        {
-            // Excel.Application excelApp = new Excel.Application();
-            // Excel.Workbook excelWorkbook = excelApp.Workbooks.Open(filePath);
+        { 
             excelApp = new Excel.Application();
             excelWorkbook = excelApp.Workbooks.Open(filePath);
             var excelSheets = excelWorkbook.Worksheets;
@@ -36,7 +34,7 @@ namespace TestFramework
             int rowStart = 2;
             int columnStart = 1;
             Excel.Range range = worksheet.Cells[rowStart,columnStart];
-           
+            
             while (range.Value != null )
             {
                 var menu = new Menu(range.Value.ToString());
@@ -47,18 +45,20 @@ namespace TestFramework
                     menu.AddMenuItem(range.Value.ToString());
                     rowStart++;
                     range = worksheet.Cells[rowStart, columnStart];
+                    
                 }
                 navigation.AddMenu(menu);
                 columnStart++;
                 rowStart = 2;
                 range = worksheet.Cells[rowStart, columnStart];
+                
             }
             return navigation;
             
         }
 
 
-        public  List<Journal> GetJournal()
+        public static  List<Journal> GetJournal()
         {
             IList<Excel.Worksheet> journalSheets = GetJournalsWorkSheets();
             List<Journal> journals = new List<Journal>();

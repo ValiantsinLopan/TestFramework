@@ -120,4 +120,7 @@
   <data name="DriverPath" xml:space="preserve">
     <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>
   </data>
+  <data name="DriverPathSony" xml:space="preserve">
+    <value>D:\VALIANTSIN\TAT LAB\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>
+  </data>
 </root>

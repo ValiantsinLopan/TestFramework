@@ -27,7 +27,18 @@ namespace TestFramework
                 return driver;
             }
         }
-        
+        public void GetDriver(string browser)
+        {
+
+        }
+        public void GetChromeDriver()
+        {
+
+        }
+
+
+
+
         public static void KillDriver()
         {
             driver.Quit();

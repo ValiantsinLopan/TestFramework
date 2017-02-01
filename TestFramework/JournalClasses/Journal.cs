@@ -8,13 +8,14 @@ namespace TestFramework.JournalClasses
 {
     public class Journal
     {
-        string Name { get; set; }
+        public string Name { get ; set; }
         public Navigation nav;
-        public Journal(string Name,Navigation nav)
+        public Journal(string name,Navigation Nav)
         {
-            this.Name = Name;
-            this.nav = nav;    
+            Name = name;
+            nav = Nav;    
         }
+        
     }
 
 }

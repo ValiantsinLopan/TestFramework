@@ -56,17 +56,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelGetter.cs" />
-    <Compile Include="ExcelWorker.cs" />
+    <Compile Include="Tools\ExcelGetter.cs" />
+    <Compile Include="Tools\ExcelWorker.cs" />
     <Compile Include="JournalClasses\Menu.cs" />
     <Compile Include="JournalClasses\MenuItem.cs" />
     <Compile Include="JournalClasses\Journal.cs" />
     <Compile Include="JournalClasses\Navigation.cs" />
+    <Compile Include="JournalPageObjects\MenuElement.cs" />
+    <Compile Include="Steps.cs" />
     <Compile Include="TestData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestData.resx</DependentUpon>
     </Compile>
+    <Compile Include="Tests\NavigationTest.cs" />
     <Compile Include="WebDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +92,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.27.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.27.0\build\Selenium.WebDriver.ChromeDriver.targets')" />

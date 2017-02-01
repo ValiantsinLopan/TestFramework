@@ -8,17 +8,17 @@ namespace TestFramework.JournalClasses
 {
      public class Menu
     {
-        public static string Name { get; set; }
+        public string Name { get; set; }
         public List<MenuItem> menuItem = new List<MenuItem>();
         public Menu(string name)
         {
             Name = name;
             
         }
-        public void AddMenuItem(string item)
+        public void AddMenuItem( MenuItem item)
         {
-            menuItem.Add(new MenuItem(item));
+            menuItem.Add(item);
         }
-
+        
     }
 }

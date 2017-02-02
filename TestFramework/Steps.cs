@@ -5,26 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using TestFramework.JournalClasses;
+using TestFramework.JournalPageObjects;
 
 namespace TestFramework
 {
     public class Steps
     {
-        public static void OpenJournal(string journ,bool refreshPage)
+        public static void OpenJournal(string journName)
         {
-            
-            if (refreshPage)
-            {
-                WebDriver.Driver.Navigate().GoToUrl("http://journals.lww.com/" + journ);
-            }
-            else if ("http://journals.lww.com/" + journ + "/pages/default.aspx" != WebDriver.Driver.Url)
-            {
-                WebDriver.Driver.Navigate().GoToUrl("http://journals.lww.com/" + journ);
-            }
+            WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
         }
-        public void ChekJournal()
+        public static bool ChekMenuElement(string name)
         {
-
+            return MenuElement.IsContainMenuElement(name);
         }
     }
 }

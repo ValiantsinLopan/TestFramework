@@ -12,11 +12,12 @@ namespace TestFramework.JournalPageObjects
     public class MenuElement
     {
        
-        public  static string XPathForNavigation = "//div[@id='zz1_TopNavigationMenu'";
+        public  static string XPathForNavigation = "//div[@id='zz1_TopNavigationMenu']";
 
         public  static string GetMenuName(string menuName)
         {
-            return "//*[text()='"+menuName+"']";
+            string text = "//*[text()='" + menuName + "']";
+            return text;
         }
 
 

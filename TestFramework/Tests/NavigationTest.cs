@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using TestFramework.JournalClasses;
+using TestFramework;
+using TestFramework.JournalPageObjects;
 
 namespace TestFramework.Tests
 {
@@ -13,10 +15,25 @@ namespace TestFramework.Tests
     class NavigationTest
     {
         [Test, TestCaseSource(typeof(TestCasesProvider), "TestCases")]
-        public void TestMethod(string data)
+        public void TestMethod(Journal journal)
         {
-            System.Console.WriteLine(data);
-            Assert.IsTrue(true);
+            Steps.OpenJournal(journal.Name);
+            foreach(Menu menu in journal.nav.menu)
+            {
+                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in "+journal.Name);
+                foreach( MenuItem item in menu.menuItem)
+                {
+                    Assert.IsTrue(Steps.ChekMenuElement(menu.Name), "Problem in " + journal.Name);
+                }
+            }
+
+           // Assert.True(Steps.ChekMenuElement(menuName));
+        }
+
+        [TestFixtureTearDown]
+        public static void Cleanup()
+        {
+            WebDriver.KillDriver();
         }
     }
 
@@ -24,13 +41,15 @@ namespace TestFramework.Tests
     {
         public static IEnumerable TestCases()
         {
-            List<Journal> list =ExcelWorker.GetJournals();
+            List<Journal> list = ExcelWorker.GetJournals();
             
             foreach (var journal in list)
             {
-                yield return new TestCaseData(journal.Name);
+                yield return new TestCaseData(journal);
             }
+            
         }
+
     }
 
 

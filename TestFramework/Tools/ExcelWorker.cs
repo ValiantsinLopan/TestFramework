@@ -10,7 +10,7 @@ namespace TestFramework
 {
     public class ExcelWorker
     {
-        public static string filePath = "D:/Data for training/Styling/Responsive-Batch-6.xlsx";
+        public static string filePath = TestData.BatchPath;
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 

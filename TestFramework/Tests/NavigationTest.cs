@@ -23,13 +23,13 @@ namespace TestFramework.Tests
                 Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in "+journal.Name+" "+menu.Name);
                 foreach( MenuItem item in menu.menuItem)
                 {
-                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in " + journal.Name);
+                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in menu item from " + journal.Name);
                 }
 
             }
            
 
-            // Assert.True(Steps.ChekMenuElement(menuName));
+            
         }
 
         [TestFixtureTearDown]

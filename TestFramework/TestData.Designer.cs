@@ -61,6 +61,15 @@ namespace TestFramework {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to D:/Data for training/Styling/Responsive-Batch-6.xlsx.
+        /// </summary>
+        internal static string BatchPath {
+            get {
+                return ResourceManager.GetString("BatchPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver.
         /// </summary>
         internal static string DriverPath {

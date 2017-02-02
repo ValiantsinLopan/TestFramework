@@ -20,14 +20,16 @@ namespace TestFramework.Tests
             Steps.OpenJournal(journal.Name);
             foreach(Menu menu in journal.nav.menu)
             {
-                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in "+journal.Name);
+                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in "+journal.Name+" "+menu.Name);
                 foreach( MenuItem item in menu.menuItem)
                 {
-                    Assert.IsTrue(Steps.ChekMenuElement(menu.Name), "Problem in " + journal.Name);
+                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in " + journal.Name);
                 }
-            }
 
-           // Assert.True(Steps.ChekMenuElement(menuName));
+            }
+           
+
+            // Assert.True(Steps.ChekMenuElement(menuName));
         }
 
         [TestFixtureTearDown]

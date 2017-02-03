@@ -120,8 +120,20 @@
   <data name="BatchPath" xml:space="preserve">
     <value>D:/Data for training/Styling/Responsive-Batch-6.xlsx</value>
   </data>
-  <data name="DriverPath" xml:space="preserve">
+  <data name="Browser" xml:space="preserve">
+    <value>chrome</value>
+  </data>
+  <data name="DriverPathChrome" xml:space="preserve">
     <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>
+  </data>
+  <data name="DriverPathEdge" xml:space="preserve">
+    <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.EdgeDriver.3.14393\content</value>
+  </data>
+  <data name="DriverPathFireFox" xml:space="preserve">
+    <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.Firefox.WebDriver.0.13.0\driver</value>
+  </data>
+  <data name="DriverPathIE" xml:space="preserve">
+    <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.IEDriver.3.0.0.1\driver</value>
   </data>
   <data name="DriverPathSony" xml:space="preserve">
     <value>D:\VALIANTSIN\TAT LAB\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>

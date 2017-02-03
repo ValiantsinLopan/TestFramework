@@ -70,11 +70,47 @@ namespace TestFramework {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to chrome.
+        /// </summary>
+        internal static string Browser {
+            get {
+                return ResourceManager.GetString("Browser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver.
         /// </summary>
-        internal static string DriverPath {
+        internal static string DriverPathChrome {
             get {
-                return ResourceManager.GetString("DriverPath", resourceCulture);
+                return ResourceManager.GetString("DriverPathChrome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.EdgeDriver.3.14393\content.
+        /// </summary>
+        internal static string DriverPathEdge {
+            get {
+                return ResourceManager.GetString("DriverPathEdge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.Firefox.WebDriver.0.13.0\driver.
+        /// </summary>
+        internal static string DriverPathFireFox {
+            get {
+                return ResourceManager.GetString("DriverPathFireFox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.IEDriver.3.0.0.1\driver.
+        /// </summary>
+        internal static string DriverPathIE {
+            get {
+                return ResourceManager.GetString("DriverPathIE", resourceCulture);
             }
         }
         

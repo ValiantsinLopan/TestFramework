@@ -9,6 +9,7 @@ using OpenQA.Selenium;
 using TestFramework.JournalClasses;
 using TestFramework;
 using TestFramework.JournalPageObjects;
+using TestFramework.WD;
 namespace TestFrameworkTests1
 {
     [TestFixture]

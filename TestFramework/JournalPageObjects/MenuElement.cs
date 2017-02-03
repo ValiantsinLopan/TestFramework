@@ -14,18 +14,14 @@ namespace TestFramework.JournalPageObjects
        
         public  static string XPathForNavigation = "//div[@id='zz1_TopNavigationMenu']";
 
-        public  static string GetMenuName(string menuName)
-        {
-            string text = "//*[text()='" + menuName + "']";
-            return text;
-        }
+       
 
 
         public static bool IsContainMenuElement(string name)
         {
             try
             {
-                WebDriver.Driver.FindElement(By.XPath(XPathForNavigation + GetMenuName(name)));
+                WD.WebDriver.Driver.FindElement(By.XPath($"//div[@id='zz1_TopNavigationMenu']//*[text()='{name}']"));
                 
 
             }

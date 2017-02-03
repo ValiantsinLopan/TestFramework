@@ -21,4 +21,3 @@ D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.TestDa
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.csproj.GenerateResource.Cache
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.pdb
-C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache

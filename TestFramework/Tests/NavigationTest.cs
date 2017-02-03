@@ -20,36 +20,34 @@ namespace TestFramework.Tests
             Steps.OpenJournal(journal.Name);
             foreach(Menu menu in journal.nav.menu)
             {
-                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in "+journal.Name+" "+menu.Name);
+                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in menu "+ menu.Name + " from "+journal.Name);
                 foreach( MenuItem item in menu.menuItem)
                 {
-                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in menu item from " + journal.Name);
+                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in menu item "+item.Name+" from " + journal.Name);
                 }
 
             }
            
-
-            
         }
 
         [TestFixtureTearDown]
         public static void Cleanup()
         {
-            WebDriver.KillDriver();
+            WD.WebDriver.KillDriver();
         }
     }
 
     public class TestCasesProvider
     {
-        public static IEnumerable TestCases()
+        public static List<TestCaseData> TestCases()
         {
             List<Journal> list = ExcelWorker.GetJournals();
-            
+            var testCases  = new List<TestCaseData>();
             foreach (var journal in list)
             {
-                yield return new TestCaseData(journal);
+                testCases.Add( new TestCaseData(journal));
             }
-            
+            return testCases;
         }
 
     }

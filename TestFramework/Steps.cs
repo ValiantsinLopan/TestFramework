@@ -13,7 +13,7 @@ namespace TestFramework
     {
         public static void OpenJournal(string journName)
         {
-            WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
+            WD.WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
         }
         public static bool ChekMenuElement(string name)
         {

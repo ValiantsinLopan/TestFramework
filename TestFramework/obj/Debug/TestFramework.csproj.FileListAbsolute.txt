@@ -21,3 +21,5 @@ D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.TestDa
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.csproj.GenerateResource.Cache
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.Support.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.Support.xml

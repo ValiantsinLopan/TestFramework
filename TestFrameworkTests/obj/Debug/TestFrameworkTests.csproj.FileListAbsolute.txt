@@ -34,3 +34,7 @@ C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\Te
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests1.pdb
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.xml

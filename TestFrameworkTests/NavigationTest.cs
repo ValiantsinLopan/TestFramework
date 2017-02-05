@@ -25,7 +25,7 @@ namespace TestFrameworkTests
     {
         public static IEnumerable TestCases()
         {
-            List<Journal> list = ExcelWorker.GetJournals();
+            List<Journal> list = ExcelWorker.GetJournals(6);
 
             foreach (var journal in list)
             {

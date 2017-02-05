@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;
 using TestFramework.JournalClasses;
 
-namespace TestFramework
+namespace TestFramework.Utils
 {
     public class ExcelWorker
     {
@@ -14,10 +14,10 @@ namespace TestFramework
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 
-        public static IList<Excel.Worksheet> GetJournalsWorkSheets()
-        { 
-            excelApp = new Excel.Application();
-            excelWorkbook = excelApp.Workbooks.Open(filePath);
+        public static IList<Excel.Worksheet> GetJournalsWorkSheets(int batchNumber)
+        {
+
+            excelWorkbook = ExcelGetter.OpenBatch(batchNumber);
             var excelSheets = excelWorkbook.Worksheets;
             IList<Excel.Worksheet> journals = new List<Excel.Worksheet> (); 
             foreach (Excel.Worksheet worksheet in excelWorkbook.Worksheets)
@@ -56,15 +56,15 @@ namespace TestFramework
             return navigation;
             
         }
-        public static Journal GetJournal(string journalName)
+        public static Journal GetJournal(string journalName,int batchNumber)
         {
-            Journal journal = new Journal(journalName,GetNavigation(ExcelGetter.GetWorkSheet(journalName,filePath)));
+            Journal journal = new Journal(journalName,GetNavigation(ExcelGetter.GetWorkSheet(journalName,batchNumber)));
             return journal;
         }
 
-        public static  List<Journal> GetJournals()
+        public static  List<Journal> GetJournals(int batchNumber)
         {
-            IList<Excel.Worksheet> journalSheets = GetJournalsWorkSheets();
+            IList<Excel.Worksheet> journalSheets = GetJournalsWorkSheets(batchNumber);
             List<Journal> journals = new List<Journal>();
             int countOfJournals = journalSheets.Count;
             foreach(Excel.Worksheet journalSheet in journalSheets)
@@ -72,9 +72,9 @@ namespace TestFramework
                 string name = journalSheet.Name;
                 journals.Add(new Journal(name,GetNavigation(journalSheet)));
             }
-            excelApp.Quit();
             return journals;
             
+
         } 
         
     }

@@ -54,7 +54,7 @@ namespace TestFramework.WD
         }
         public static IWebDriver GetChromeDriver()
         {
-            driver = new ChromeDriver(TestData.DriverPathChrome);
+            driver = new ChromeDriver(TestData.DriverPathSony);
             driver.Manage().Window.Maximize();
             return driver;
         }

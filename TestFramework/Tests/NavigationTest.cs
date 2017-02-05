@@ -8,6 +8,7 @@ using NUnit.Framework;
 using TestFramework.JournalClasses;
 using TestFramework;
 using TestFramework.JournalPageObjects;
+using TestFramework.Utils;
 
 namespace TestFramework.Tests
 {
@@ -15,7 +16,7 @@ namespace TestFramework.Tests
     class NavigationTest
     {
         [Test, TestCaseSource(typeof(TestCasesProvider), "TestCases")]
-        public void TestMethod(Journal journal)
+        public void TestNavigation(Journal journal)
         {
             Steps.OpenJournal(journal.Name);
             foreach(Menu menu in journal.nav.menu)
@@ -41,7 +42,7 @@ namespace TestFramework.Tests
     {
         public static List<TestCaseData> TestCases()
         {
-            List<Journal> list = ExcelWorker.GetJournals();
+            List<Journal> list = ExcelWorker.GetJournals(6);
             var testCases  = new List<TestCaseData>();
             foreach (var journal in list)
             {

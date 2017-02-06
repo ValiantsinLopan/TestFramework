@@ -9,12 +9,12 @@ using TestFramework.Utils;
 
 namespace TestFramework.MSTests
 {
-    public static class DataSourseCSV
+    public class DataSourseCSV
     {
         public static void GetTestCaseData(int batchNumber)
         {
             var journals = ExcelWorker.GetJournals(batchNumber);
-            CsvWorker.WriteRow(TestData.DataForMStestDataSource, "Journal,MenuItem/n");
+            CsvWorker.WriteRow(TestData.DataForMStestDataSource, "Journal,MenuItem\n");
             foreach(var journal in journals)
             {
                 foreach(var menu in journal.nav.menu)

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using TestFramework.JournalClasses;
-using TestFramework;
+using TestFramework.Utils;
 
 namespace TestFrameworkTests
 {

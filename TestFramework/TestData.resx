@@ -124,7 +124,7 @@
     <value>chrome</value>
   </data>
   <data name="DataForMStestDataSource" xml:space="preserve">
-    <value>D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\TestData\Data.csv</value>
+    <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData</value>
   </data>
   <data name="DriverPathChrome" xml:space="preserve">
     <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>

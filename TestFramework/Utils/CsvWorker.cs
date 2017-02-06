@@ -7,7 +7,7 @@ using System.IO;
 
 namespace TestFramework.Utils
 {
-    public static class CsvWorker
+    public class CsvWorker
     {
         public static string AddSepatator(params string [] parameters)
         {
@@ -24,7 +24,18 @@ namespace TestFramework.Utils
 
         public static void WriteRow(string path, string row)
         {
-            File.AppendAllText(path, row);
+            string filePath = $@"{path}\Data.csv";
+            if (!File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, row);
+               
+            }
+            else
+            {
+                File.AppendAllText(filePath, row);
+            }
+
+            
         }
     }
 

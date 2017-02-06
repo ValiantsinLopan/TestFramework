@@ -23,7 +23,6 @@ D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTe
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\obj\Debug\TestFrameworkTests1.pdb
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\TestFrameworkTests1.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\TestFrameworkTests1.pdb
-C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\TestFramework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\TestFramework.pdb
@@ -38,3 +37,5 @@ D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\nunit.framework.xml
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.xml
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFrameworkTests\bin\Debug\WebDriver.Support.xml

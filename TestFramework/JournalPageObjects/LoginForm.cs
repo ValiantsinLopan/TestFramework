@@ -11,13 +11,16 @@ namespace TestFramework.JournalPageObjects
     public class LoginForm
     {
         [FindsBy(How=How.XPath, Using = "//*[contains(@id, 'txt_UserName')]")]
-        private IWebElement LoginInput;
+        private static IWebElement LoginInput;
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'txt_Password')]")]
-        private IWebElement PasswordInput;
+        private static IWebElement PasswordInput;
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'LoginButton')]")]
-        private IWebElement LoginButton;
+        private static IWebElement LoginButton;
+
+        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'Logout')]")]
+        private IWebElement LogoutButton;
 
         [FindsBy(How =How.XPath, Using = "//*[contains(@id, 'RememberUsername')]")]
         private IWebElement RememberMeCheckBox;
@@ -27,12 +30,18 @@ namespace TestFramework.JournalPageObjects
 
         }
 
-        public void Login(string login, string password)
+        public static void Login(string login, string password)
         {
             LoginInput.SendKeys(login);
             PasswordInput.SendKeys(password);
             LoginButton.Click();
         }
+
+        public void Logout()
+        {
+            LogoutButton.Click();
+        }
+
         public void NavigateHere()
         {
             WD.WebDriver.Driver.Navigate().GoToUrl("http://journals.lww.com/pages/default.aspx");

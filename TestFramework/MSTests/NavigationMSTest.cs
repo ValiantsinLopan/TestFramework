@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestFramework.JournalClasses;
 
 namespace TestFramework.MSTests
 {
     [TestClass()] 
     public class NavigationMSTest
     {
-        public TestContext TestContext { get; set; }
+      
 
         [ClassInitialize()]
         public static void ClassInit(TestContext context)
@@ -27,8 +28,11 @@ namespace TestFramework.MSTests
         {
             var journalName = TestContext.DataRow["Journal"].ToString();
             var menuItem = TestContext.DataRow["MenuItem"].ToString();
+            
+
             Steps.OpenJournal(journalName);
             Assert.IsTrue(Steps.ChekMenuElement(menuItem), $"Problem in{journalName} in {menuItem} ");
         }
+        public TestContext TestContext { get; set; }
     }
 }

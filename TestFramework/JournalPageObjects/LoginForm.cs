@@ -5,49 +5,50 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium;
+using TestFramework.WD;
 
 namespace TestFramework.JournalPageObjects
 {
     public class LoginForm
-    {
-        [FindsBy(How=How.XPath, Using = "//*[contains(@id, 'txt_UserName')]")]
-        private IWebElement LoginInput;
+    {   
+        private const string LoginInputXPath = "//*[contains(@id, 'txt_UserName')]";
 
-        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'txt_Password')]")]
-        private IWebElement PasswordInput;
+        private const string PasswordInputXPath = "//*[contains(@id, 'txt_Password')]";
 
-        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'LoginButton')]")]
-        private  IWebElement LoginButton;
+        private const string LoginButtonXPath = "//*[contains(@id, 'LoginButton')]" ;
 
-        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'Logout')]")]
-        public IWebElement LogoutButton;
+        public const string LogoutButtonXPath = "//*[contains(@id, 'Logout')]";
 
-        [FindsBy(How =How.XPath, Using = "//*[contains(@id, 'RememberUsername')]")]
-        private IWebElement RememberMeCheckBox;
-        
-        private IWebDriver driver;
+        private const string RememberMeCheckBox = "//*[contains(@id, 'RememberUsername')]";
 
-        public LoginForm(IWebDriver driver)
-        {
-            this.driver = driver;
-            PageFactory.InitElements(this.driver, this);
-        }
+    
 
         public void Login(string login, string password)
         {
-            LoginInput.SendKeys(login);
-            PasswordInput.SendKeys(password);
-            LoginButton.Click();
+            WebDriver.Driver.FindElement(By.XPath(LoginInputXPath)).SendKeys(login);
+            WebDriver.Driver.FindElement(By.XPath(PasswordInputXPath)).SendKeys(password);
+            WebDriver.Driver.FindElement(By.XPath(LoginButtonXPath)).Click();
+        }
+
+        public void LoginRememberMe(string login, string password)
+        {
+            WebDriver.Driver.FindElement(By.XPath(LoginInputXPath)).SendKeys(login);
+            WebDriver.Driver.FindElement(By.XPath(PasswordInputXPath)).SendKeys(password);
+            WebDriver.Driver.FindElement(By.XPath(RememberMeCheckBox)).Click();
+            WebDriver.Driver.FindElement(By.XPath(LoginButtonXPath)).Click();
+        }
+
+        public  bool ContainLogout()
+        {
+            bool contain;
+            contain = (WebDriver.Driver.FindElement(By.XPath(LogoutButtonXPath)).Displayed) ? true : false;
+            return contain;
         }
 
         public void Logout()
         {
-            LogoutButton.Click();
+            WebDriver.Driver.FindElement(By.XPath(LogoutButtonXPath)).Click();
         }
-
-        public void NavigateHere()
-        {
-            WD.WebDriver.Driver.Navigate().GoToUrl("http://journals.lww.com/pages/default.aspx");
-        }
+        
     }
 }

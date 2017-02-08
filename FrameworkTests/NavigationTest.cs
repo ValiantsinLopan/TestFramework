@@ -17,17 +17,16 @@ namespace FrameworkTests
     [TestFixture()]
     class NavigationTest
     {
-        private Steps steps = new Steps();
         [Test, TestCaseSource(typeof(TestCasesProvider), "TestCases")]
         public void TestNavigation(Journal journal)
         {
-            steps.OpenJournal(journal.Name);
+            Step.OpenJournal(journal.Name);
             foreach(Menu menu in journal.nav.menu)
             {
-                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in menu "+ menu.Name + " from "+journal.Name);
+                Assert.IsTrue(Step.ChekMenuElement(menu.Name),"Problem in menu "+ menu.Name + " from "+journal.Name);
                 foreach( MenuItem item in menu.menuItem)
                 {
-                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in menu item "+item.Name+" from " + journal.Name);
+                    Assert.IsTrue(Step.ChekMenuElement(item.Name), "Problem in menu item "+item.Name+" from " + journal.Name);
                 }
 
             }

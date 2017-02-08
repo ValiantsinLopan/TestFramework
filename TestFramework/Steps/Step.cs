@@ -11,25 +11,41 @@ using TestFramework.JournalPageObjects;
 
 namespace TestFramework.Steps
 {
-    public class Steps
+    public class Step
     {
-        public void OpenJournal(string journName)
+        private static MainPage MainPage = new MainPage();
+
+        public static void OpenJournal(string journName)
         {
             WD.WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
         }
-
+        public void OpenMainPage()
+        {
+            MainPage.NavigateHere();
+        }
 
         public void LoginWKJournal(string username, string password)
         {
-            LoginForm loginForm = new LoginForm(WebDriver.Driver);
-            WebDriver.Driver.Navigate().GoToUrl("http://journals.lww.com/");
-            loginForm.Login(username, password);
+            MainPage.LoginForm.Login(username, password);
+            
         }
 
+
+        public bool IsLogin()
+        {
+            return MainPage.LoginForm.ContainLogout();
+        }
+
+
+
+
+        
         public void CloseBrowser()
         {
             WebDriver.KillDriver();
         }
+
+
         public static bool ChekMenuElement(string name)
         {
             return MenuElement.IsContainMenuElement(name);

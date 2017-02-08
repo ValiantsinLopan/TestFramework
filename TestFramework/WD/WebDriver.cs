@@ -29,7 +29,6 @@ namespace TestFramework.WD
                 if (driver == null)
                 
                     driver = new WDGetter().GetDriver(TestData.Browser);
-                    //driver = new ChromeDriver(TestData.DriverPathChrome);
                     return driver;
             }
         }

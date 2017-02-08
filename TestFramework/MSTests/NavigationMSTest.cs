@@ -13,7 +13,7 @@ namespace TestFramework.MSTests
     [TestClass()] 
     public class NavigationMSTest
     {
-        private Steps steps = new Steps();
+        
 
         [ClassInitialize()]
         public static void ClassInit(TestContext context)
@@ -32,8 +32,8 @@ namespace TestFramework.MSTests
             var menuItem = TestContext.DataRow["MenuItem"].ToString();
             
 
-            steps.OpenJournal(journalName);
-            Assert.IsTrue(steps.ChekMenuElement(menuItem), $"Problem in{journalName} in {menuItem} ");
+            Step.OpenJournal(journalName);
+            Assert.IsTrue(Step.ChekMenuElement(menuItem), $"Problem in{journalName} in {menuItem} ");
         }
         public TestContext TestContext { get; set; }
     }

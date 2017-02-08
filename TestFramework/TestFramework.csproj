@@ -77,7 +77,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JournalPageObjects\JournalPage.cs" />
     <Compile Include="JournalPageObjects\LoginForm.cs" />
+    <Compile Include="JournalPageObjects\MainPage.cs" />
+    <Compile Include="JournalPageObjects\SearchPanel.cs" />
     <Compile Include="MSTests\DataSourseCSV.cs" />
     <Compile Include="MSTests\NavigationMSTest.cs" />
     <Compile Include="Utils\CsvWorker.cs" />
@@ -88,13 +91,12 @@
     <Compile Include="JournalClasses\Journal.cs" />
     <Compile Include="JournalClasses\Navigation.cs" />
     <Compile Include="JournalPageObjects\MenuElement.cs" />
-    <Compile Include="Steps\Steps.cs" />
+    <Compile Include="Steps\Step.cs" />
     <Compile Include="TestData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestData.resx</DependentUpon>
     </Compile>
-    <Compile Include="Tests\NavigationTest.cs" />
     <Compile Include="WD\WDGetter.cs" />
     <Compile Include="WD\WebDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

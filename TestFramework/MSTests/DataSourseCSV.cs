@@ -20,10 +20,10 @@ namespace TestFramework.MSTests
                 CsvWorker.WriteRow(TestData.DataForMStestDataSource, CsvWorker.AddSepatator(journal.Name,journal.nav.menu[0].Name));
                 foreach (var menu in journal.nav.menu)
                 {
-                    CsvWorker.WriteRow(TestData.DataForMStestDataSource, CsvWorker.AddSepatator(null, menu.Name));
+                    CsvWorker.WriteRow(TestData.DataForMStestDataSource, CsvWorker.AddSepatator(journal.Name, menu.Name));
                     foreach(var menuIten in menu.menuItem)
                     {
-                        CsvWorker.WriteRow(TestData.DataForMStestDataSource, CsvWorker.AddSepatator(null, menuIten.Name));
+                        CsvWorker.WriteRow(TestData.DataForMStestDataSource, CsvWorker.AddSepatator(journal.Name, menuIten.Name));
                     }
 
                 }

@@ -27,6 +27,7 @@ namespace TestFramework.Utils
             string filePath = $@"{path}\Data.csv";
             if (!File.Exists(filePath))
             {
+                
                 File.WriteAllText(filePath, row);
                
             }
@@ -34,7 +35,7 @@ namespace TestFramework.Utils
             {
                 File.AppendAllText(filePath, row);
             }
-
+            
             
         }
     }

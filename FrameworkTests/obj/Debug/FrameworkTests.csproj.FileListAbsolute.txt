@@ -1,0 +1,14 @@
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\FrameworkTests.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\FrameworkTests.pdb
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\nunit.framework.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\TestFramework.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\WebDriver.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\WebDriver.Support.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\TestFramework.pdb
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\nunit.framework.xml
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\WebDriver.xml
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\WebDriver.Support.xml
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.pdb
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.csprojResolveAssemblyReference.cache

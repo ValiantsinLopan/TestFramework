@@ -11,26 +11,29 @@ namespace TestFramework.JournalPageObjects
     public class LoginForm
     {
         [FindsBy(How=How.XPath, Using = "//*[contains(@id, 'txt_UserName')]")]
-        private static IWebElement LoginInput;
+        private IWebElement LoginInput;
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'txt_Password')]")]
-        private static IWebElement PasswordInput;
+        private IWebElement PasswordInput;
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'LoginButton')]")]
-        private static IWebElement LoginButton;
+        private  IWebElement LoginButton;
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'Logout')]")]
-        private IWebElement LogoutButton;
+        public IWebElement LogoutButton;
 
         [FindsBy(How =How.XPath, Using = "//*[contains(@id, 'RememberUsername')]")]
         private IWebElement RememberMeCheckBox;
+        
+        private IWebDriver driver;
 
-        public LoginForm()
+        public LoginForm(IWebDriver driver)
         {
-
+            this.driver = driver;
+            PageFactory.InitElements(this.driver, this);
         }
 
-        public static void Login(string login, string password)
+        public void Login(string login, string password)
         {
             LoginInput.SendKeys(login);
             PasswordInput.SendKeys(password);

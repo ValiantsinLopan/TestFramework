@@ -12,19 +12,20 @@ using TestFramework.Utils;
 
 namespace TestFramework.Tests
 {
+    private Steps steps = new Steps();
     [TestFixture()]
     class NavigationTest
     {
         [Test, TestCaseSource(typeof(TestCasesProvider), "TestCases")]
         public void TestNavigation(Journal journal)
         {
-            Steps.OpenJournal(journal.Name);
+            steps.OpenJournal(journal.Name);
             foreach(Menu menu in journal.nav.menu)
             {
-                Assert.IsTrue(Steps.ChekMenuElement(menu.Name),"Problem in menu "+ menu.Name + " from "+journal.Name);
+                Assert.IsTrue(steps.ChekMenuElement(menu.Name),"Problem in menu "+ menu.Name + " from "+journal.Name);
                 foreach( MenuItem item in menu.menuItem)
                 {
-                    Assert.IsTrue(Steps.ChekMenuElement(item.Name), "Problem in menu item "+item.Name+" from " + journal.Name);
+                    Assert.IsTrue(steps.ChekMenuElement(item.Name), "Problem in menu item "+item.Name+" from " + journal.Name);
                 }
 
             }

@@ -17,8 +17,9 @@ namespace TestFramework.Steps
 
         public static void OpenJournal(string journName)
         {
-            WD.WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
+            WebDriver.Driver.Navigate().GoToUrl(TestData.URL+journName);   
         }
+
         public void OpenMainPage()
         {
             MainPage.NavigateHere();
@@ -27,25 +28,32 @@ namespace TestFramework.Steps
         public void LoginWKJournal(string username, string password)
         {
             MainPage.LoginForm.Login(username, password);
-            
         }
-
+        public bool IsRememberUser(string username, string password)
+        {
+            MainPage.LoginForm.LoginRememberMe(username, password);
+            MainPage.LoginForm.Logout();
+            if (MainPage.LoginForm.LoginInputText() == username)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+         
+        }
 
         public bool IsLogin()
         {
             return MainPage.LoginForm.ContainLogout();
         }
-
-
-
-
         
         public void CloseBrowser()
         {
             WebDriver.KillDriver();
         }
-
-
+        
         public static bool ChekMenuElement(string name)
         {
             return MenuElement.IsContainMenuElement(name);

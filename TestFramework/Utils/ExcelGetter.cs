@@ -17,6 +17,7 @@ namespace TestFramework.Utils
         {
             excelApp = new Excel.Application() { Visible = false};
             excelWorkbook = excelApp.Workbooks.Open($@"D:\Data for training\Styling\Responsive-Batch-{batchNumber}.xlsx");
+            //excelApp.Quit();
             return excelWorkbook;
             
         }

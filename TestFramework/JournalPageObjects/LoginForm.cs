@@ -49,6 +49,12 @@ namespace TestFramework.JournalPageObjects
         {
             WebDriver.Driver.FindElement(By.XPath(LogoutButtonXPath)).Click();
         }
-        
+
+        public string LoginInputText()
+        {
+            string text = WebDriver.Driver.FindElement(By.XPath(LoginInputXPath)).GetAttribute("value");
+            Console.WriteLine(text);
+            return text;
+        }
     }
 }

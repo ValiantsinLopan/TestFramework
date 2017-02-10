@@ -141,6 +141,9 @@
   <data name="DriverPathSony" xml:space="preserve">
     <value>D:\VALIANTSIN\TAT LAB\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</value>
   </data>
+  <data name="LoginData" xml:space="preserve">
+    <value>C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData\LoginData.xlsx</value>
+  </data>
   <data name="URL" xml:space="preserve">
     <value>http://journals.lww.com/</value>
   </data>

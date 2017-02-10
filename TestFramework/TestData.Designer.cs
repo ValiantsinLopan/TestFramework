@@ -133,6 +133,15 @@ namespace TestFramework {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData\LoginData.xlsx.
+        /// </summary>
+        internal static string LoginData {
+            get {
+                return ResourceManager.GetString("LoginData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://journals.lww.com/.
         /// </summary>
         internal static string URL {

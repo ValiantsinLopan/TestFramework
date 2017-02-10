@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="JournalClasses\Login.cs" />
     <Compile Include="JournalClasses\Search.cs" />
+    <Compile Include="JournalPageObjects\AdvancedSearch.cs" />
     <Compile Include="JournalPageObjects\JournalPage.cs" />
     <Compile Include="JournalPageObjects\LoginForm.cs" />
     <Compile Include="JournalPageObjects\MainPage.cs" />

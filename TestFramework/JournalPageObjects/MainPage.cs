@@ -10,6 +10,8 @@ namespace TestFramework.JournalPageObjects
     public class MainPage
     {
         public LoginForm LoginForm = new LoginForm();
+        public SearchPanel SearchPanel = new SearchPanel();
+
         public void NavigateHere()
         {
             WebDriver.Driver.Navigate().GoToUrl(TestData.URL);

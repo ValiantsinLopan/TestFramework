@@ -10,6 +10,10 @@ namespace TestFramework.JournalPageObjects
     public class JournalPage
     {
         private string url;
+
+        public SearchPanel SearchPanel = new SearchPanel();
+        public LoginForm LoginForm = new LoginForm();
+
         public string Url
         {
             get { return url; }
@@ -17,9 +21,11 @@ namespace TestFramework.JournalPageObjects
             set { url = $"{ TestData.URL}/{value}"; }
 
         }
-        public void NavigateHere()
+
+        public void NavigateHere(string joutnalName)
         {
             WebDriver.Driver.Navigate().GoToUrl(Url);
         }
+
     }
 }

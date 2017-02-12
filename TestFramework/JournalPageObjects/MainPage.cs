@@ -16,5 +16,6 @@ namespace TestFramework.JournalPageObjects
         {
             WebDriver.Driver.Navigate().GoToUrl(TestData.URL);
         }
+
     }
 }

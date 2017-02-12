@@ -81,11 +81,13 @@
     <Compile Include="JournalClasses\Search.cs" />
     <Compile Include="JournalPageObjects\AdvancedSearch.cs" />
     <Compile Include="JournalPageObjects\JournalPage.cs" />
-    <Compile Include="JournalPageObjects\LoginForm.cs" />
+    <Compile Include="JournalPageObjects\Elements\LoginForm.cs" />
     <Compile Include="JournalPageObjects\MainPage.cs" />
-    <Compile Include="JournalPageObjects\SearchPanel.cs" />
+    <Compile Include="JournalPageObjects\Elements\SearchPanel.cs" />
+    <Compile Include="JournalPageObjects\SearchResultPage.cs" />
     <Compile Include="MSTests\DataSourseCSV.cs" />
     <Compile Include="MSTests\NavigationMSTest.cs" />
+    <Compile Include="Steps\SearchSteps.cs" />
     <Compile Include="Utils\CsvWorker.cs" />
     <Compile Include="Utils\ExcelGetter.cs" />
     <Compile Include="Utils\ExcelWorker.cs" />

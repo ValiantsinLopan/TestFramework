@@ -120,6 +120,9 @@
   <data name="BatchPath" xml:space="preserve">
     <value>D:/Data for training/Styling/Responsive-Batch-6.xlsx</value>
   </data>
+  <data name="BatchPathSony" xml:space="preserve">
+    <value>D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-6.xlsx</value>
+  </data>
   <data name="Browser" xml:space="preserve">
     <value>chrome</value>
   </data>

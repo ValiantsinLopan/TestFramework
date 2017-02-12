@@ -12,3 +12,18 @@ C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\Fr
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.pdb
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.csprojResolveAssemblyReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\FrameworkTests.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\FrameworkTests.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\nunit.framework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\TestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\WebDriver.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\WebDriver.Support.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\TestFramework.pdb
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\nunit.framework.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\WebDriver.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\WebDriver.Support.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.csprojResolveAssemblyReference.cache
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.pdb

@@ -10,7 +10,7 @@ namespace TestFramework.Utils
 {
     public class ExcelWorker
     {
-        public static string filePath = TestData.BatchPath;
+        public static string filePath = TestData.BatchPathSony;
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 

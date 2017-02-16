@@ -11,6 +11,9 @@ D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\obj\Debug\TestFramework.pdb
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.Support.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\WebDriver.Support.xml
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\TestFramework.dll.config
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\TestFramework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\TestFramework.pdb
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
@@ -25,6 +28,3 @@ C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\Te
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.csproj.GenerateResource.Cache
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.dll
 C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.pdb
-C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache
-D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

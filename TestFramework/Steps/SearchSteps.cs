@@ -18,6 +18,11 @@ namespace TestFramework.Steps
             JournalPage.NavigateHere(journalName);
         }
 
+        public void OpenCurrentIssueJournalPage(string journalName)
+        {
+            JournalPage.NavigateCurrentIssuePage(journalName);
+        }
+
         public void SearchArticleFromIsuue()
         {
             string request = JournalPage.GetArticleName();

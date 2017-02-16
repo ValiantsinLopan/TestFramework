@@ -13,10 +13,7 @@ namespace TestFramework.JournalPageObjects
     {
        
         public  static string XPathForNavigation = "//div[@id='zz1_TopNavigationMenu']";
-
-       
-
-
+        
         public static bool IsContainMenuElement(string name)
         {
             try

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 using System.Configuration;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -56,7 +57,7 @@ namespace TestFramework.WD
         }
         public static IWebDriver GetChromeDriver()
         {
-           // driver = new ChromeDriver(ConfigurationManager.AppSettings["DriverPathChrome"]);
+            //driver = new ChromeDriver(ConfigurationManager.AppSettings["DriverPathChrome"]);
             driver = new ChromeDriver(TestData.DriverPathChrome);
             driver.Manage().Window.Maximize();
             return driver;
@@ -92,6 +93,6 @@ namespace TestFramework.WD
             driver = new SafariDriver();
             return driver;
         }
-
+        
     }
 }

@@ -29,5 +29,20 @@ namespace TestFramework.Utils
             Excel.Worksheet workSheet = excelWorkbook.Worksheets[name];
             return workSheet;
         }
+        ~ExcelGetter()
+        {
+            Dispose();
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing) return;
+            excelApp?.Quit();
+        }
     }
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tests>
+  <possitive user="volya218@tut.by" password="lopan2017"/>
+  <possitive user="valiantsin" password="lopan2017"/>
+  <possitive user="Valiantsin" password="lopan2017"/>
+  <negative user="aliantsin" password="lopan2017"/>
+  <negative user="valiantsin" password="lopan"/>
+  <negative user=" volya218@tut.by" password="lopan2017"/>
+</tests>

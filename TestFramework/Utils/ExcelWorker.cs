@@ -115,6 +115,21 @@ namespace TestFramework.Utils
             excelApp.Quit();
             return users;
         }
+        ~ExcelWorker()
+        {
+            Dispose();
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing) return;
+            excelApp?.Quit();
+        }
     }
        
 }

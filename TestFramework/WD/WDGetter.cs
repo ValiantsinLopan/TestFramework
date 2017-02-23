@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+using System.Configuration;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -10,6 +12,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Safari;
+
 
 namespace TestFramework.WD
 {
@@ -21,9 +24,9 @@ namespace TestFramework.WD
         public const string Edge = "Edge";
         public const string IE = "IE";
 
-        public IWebDriver GetDriver(string browser)
+        public IWebDriver GetDriver(string driver)
         {
-            switch (browser)
+            switch (driver)
             {
                 case Chrome:
                     {
@@ -46,7 +49,7 @@ namespace TestFramework.WD
 
                 default:
                     {
-                        break; ;
+                        break; 
                     }
             }
 
@@ -54,7 +57,8 @@ namespace TestFramework.WD
         }
         public static IWebDriver GetChromeDriver()
         {
-            driver = new ChromeDriver(TestData.DriverPathSony);
+            //driver = new ChromeDriver(ConfigurationManager.AppSettings["DriverPathChrome"]);
+            driver = new ChromeDriver(TestData.DriverPathChrome);
             driver.Manage().Window.Maximize();
             return driver;
         }
@@ -89,6 +93,6 @@ namespace TestFramework.WD
             driver = new SafariDriver();
             return driver;
         }
-
+        
     }
 }

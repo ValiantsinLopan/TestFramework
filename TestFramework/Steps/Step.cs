@@ -41,14 +41,18 @@ namespace TestFramework.Steps
             {
                 return false;
             }
-         
         }
 
         public bool IsLogin()
         {
             return MainPage.LoginForm.ContainLogout();
         }
-        
+
+        public bool NotLogin()
+        {
+            return MainPage.LoginForm.ContainLogin();
+        }
+
         public void CloseBrowser()
         {
             WebDriver.KillDriver();

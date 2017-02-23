@@ -45,6 +45,12 @@ namespace TestFramework.JournalPageObjects
             return contain;
         }
 
+        public bool ContainLogin()
+        {
+            bool contain = (WebDriver.Driver.FindElement(By.XPath(LoginButtonXPath)).Displayed) ? true : false;
+            return contain;
+        }
+
         public void Logout()
         {
             WebDriver.Driver.FindElement(By.XPath(LogoutButtonXPath)).Click();

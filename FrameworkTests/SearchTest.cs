@@ -17,9 +17,10 @@ namespace FrameworkTests
         [Test, TestCaseSource(typeof(TestCasesProvider), "TestCases")]
         public void SearchArticleInJournalTest(Journal journal)
         {
-            steps.OpenJournal(journal.Name);
+            Console.WriteLine(journal.Name);
+            steps.OpenCurrentIssueJournalPage(journal.Name);
             steps.SearchArticleFromIsuue();
-            Assert.IsTrue(steps.IsFound(),"Article not found");
+            Assert.True(steps.IsFound(), $"bug in {journal.Name}");
 
         }
 

@@ -30,7 +30,7 @@ namespace FrameworkTests
         {
             steps.OpenMainPage();
             steps.LoginWKJournal(user.userName, user.password);
-            Assert.IsFalse(steps.IsLogin(), "Login failed");
+            Assert.IsTrue(steps.NotLogin(), "Login failed");
         }
         [Test, TestCaseSource(typeof(TestCasesFromFile), "PossitiveTestData")]
         public void RememberUserTest(Login user)

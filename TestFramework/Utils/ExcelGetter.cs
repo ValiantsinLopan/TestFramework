@@ -16,8 +16,8 @@ namespace TestFramework.Utils
         public static Excel.Workbook OpenBatch(int batchNumber)
         {
             excelApp = new Excel.Application() { Visible = false};
-            //excelWorkbook = excelApp.Workbooks.Open($@"D:\Data for training\Styling\Responsive-Batch-{batchNumber}.xlsx");
-            excelWorkbook = excelApp.Workbooks.Open($@"D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-{batchNumber}.xlsx");
+            excelWorkbook = excelApp.Workbooks.Open($@"D:\Data for training\Styling\Responsive-Batch-{batchNumber}.xlsx");
+            //excelWorkbook = excelApp.Workbooks.Open($@"D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-{batchNumber}.xlsx");
 
             //excelApp.Quit();
             return excelWorkbook;
@@ -28,6 +28,21 @@ namespace TestFramework.Utils
             var excelWorkbook = OpenBatch(batchNumber);
             Excel.Worksheet workSheet = excelWorkbook.Worksheets[name];
             return workSheet;
+        }
+        ~ExcelGetter()
+        {
+            Dispose();
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing) return;
+            excelApp?.Quit();
         }
     }
 }

@@ -27,3 +27,4 @@ D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\bin\Debug\ru\Microsoft.Visual
 D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.csprojResolveAssemblyReference.cache
 D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.dll
 D:\VALIANTSIN\TAT LAB\TestFramework\FrameworkTests\obj\Debug\FrameworkTests.pdb
+C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\FrameworkTests\bin\Debug\FrameworkTests.dll.config

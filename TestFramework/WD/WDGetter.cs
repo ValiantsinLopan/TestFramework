@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Globalization;
-using System.Configuration;
+﻿
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -12,6 +6,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Safari;
+using TestFramework.Settings;
 
 
 namespace TestFramework.WD
@@ -57,29 +52,28 @@ namespace TestFramework.WD
         }
         public static IWebDriver GetChromeDriver()
         {
-            //driver = new ChromeDriver(ConfigurationManager.AppSettings["DriverPathChrome"]);
-            driver = new ChromeDriver(TestData.DriverPathChrome);
+            driver = new ChromeDriver(SettingsBrowser.Default.ChromePath);
             driver.Manage().Window.Maximize();
             return driver;
         }
 
         public static IWebDriver GetFireFoxDriver()
         {
-            driver = new FirefoxDriver(FirefoxDriverService.CreateDefaultService(TestData.DriverPathFireFox));
+            driver = new FirefoxDriver(FirefoxDriverService.CreateDefaultService(SettingsBrowser.Default.FireFoxPath));
             driver.Manage().Window.Maximize();
             return driver;
         }
 
         public static IWebDriver GetEdgeDriver()
         {
-            driver = new EdgeDriver(TestData.DriverPathEdge);
+            driver = new EdgeDriver();
             driver.Manage().Window.Maximize();
             return driver;
         }
 
         public static IWebDriver GetIEDriver()
         {
-            driver = new InternetExplorerDriver(TestData.DriverPathIE);
+            driver = new InternetExplorerDriver();
             driver.Manage().Window.Maximize();
             return driver;
         }

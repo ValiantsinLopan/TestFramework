@@ -11,6 +11,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Safari;
+using TestFramework.Settings;
 
 
 
@@ -29,7 +30,7 @@ namespace TestFramework.WD
             {
                 if (driver == null)
                 
-                    driver = new WDGetter().GetDriver(TestData.Browser);
+                    driver = new WDGetter().GetDriver(SettingsBrowser.Default.Chrome);
                     return driver;
             }
         }

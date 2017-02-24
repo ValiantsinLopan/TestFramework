@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestFramework.Settings" GeneratedClassName="SettingsPaths">
+  <Profiles />
+  <Settings>
+    <Setting Name="BatchPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Data for training\Styling\Responsive-Batch-6.xlsx</Value>
+    </Setting>
+    <Setting Name="gfb" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

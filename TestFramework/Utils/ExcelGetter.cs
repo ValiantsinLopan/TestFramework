@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;
+using TestFramework.Settings;
 
 namespace TestFramework.Utils
 {
     public class ExcelGetter
     {
-        public static string filePath = @"D:\Data for training\Styling\Responsive-Batch-6.xlsx";
+        public static string filePath = SettingsPaths.Default.BatchPath;
         public static Excel.Application excelApp;
         public static Excel.Workbook excelWorkbook;
 

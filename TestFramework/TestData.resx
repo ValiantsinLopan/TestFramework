@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BatchPath" xml:space="preserve">
-    <value>D:/Data for training/Styling/Responsive-Batch-6.xlsx</value>
+    <value>D:\Data for training\Styling\Responsive-Batch-6.xlsx</value>
   </data>
   <data name="BatchPathSony" xml:space="preserve">
     <value>D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-6.xlsx</value>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestFramework.Settings" GeneratedClassName="SettingsBrowser">
+  <Profiles />
+  <Settings>
+    <Setting Name="Chrome" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chrome</Value>
+    </Setting>
+    <Setting Name="FireFox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">firefox</Value>
+    </Setting>
+    <Setting Name="Edge" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Edge</Value>
+    </Setting>
+    <Setting Name="IE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IE</Value>
+    </Setting>
+    <Setting Name="ChromePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</Value>
+    </Setting>
+    <Setting Name="FireFoxPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\packages\Selenium.Firefox.WebDriver.0.13.0\driver</Value>
+    </Setting>
+    <Setting Name="URl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://journals.lww.com/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

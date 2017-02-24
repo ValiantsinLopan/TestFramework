@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FrameworkTests.Settings" GeneratedClassName="SettingsPaths">
+  <Profiles />
+  <Settings>
+    <Setting Name="PossitiveLoginData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData\PossitiveLoginData.xml</Value>
+    </Setting>
+    <Setting Name="NegativeLoginData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData\NegativeLoginData.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

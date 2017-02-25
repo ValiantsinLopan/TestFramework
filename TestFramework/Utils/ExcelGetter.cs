@@ -17,8 +17,8 @@ namespace TestFramework.Utils
         public static Excel.Workbook OpenBatch(int batchNumber)
         {
             excelApp = new Excel.Application() { Visible = false};
-            excelWorkbook = excelApp.Workbooks.Open($@"D:\Data for training\Styling\Responsive-Batch-{batchNumber}.xlsx");
-            //excelWorkbook = excelApp.Workbooks.Open($@"D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-{batchNumber}.xlsx");
+            //excelWorkbook = excelApp.Workbooks.Open($@"D:\Data for training\Styling\Responsive-Batch-{batchNumber}.xlsx");
+            excelWorkbook = excelApp.Workbooks.Open($@"D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-{batchNumber}.xlsx");
 
             //excelApp.Quit();
             return excelWorkbook;

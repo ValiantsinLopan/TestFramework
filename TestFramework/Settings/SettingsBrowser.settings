@@ -23,5 +23,8 @@
     <Setting Name="URl" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://journals.lww.com/</Value>
     </Setting>
+    <Setting Name="ChromePathSony" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\VALIANTSIN\TAT LAB\TestFramework\packages\Selenium.WebDriver.ChromeDriver.2.27.0\driver</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

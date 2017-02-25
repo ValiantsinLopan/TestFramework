@@ -8,5 +8,11 @@
     <Setting Name="NegativeLoginData" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Users\Valiantsin_Lopan\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\TestData\NegativeLoginData.xml</Value>
     </Setting>
+    <Setting Name="positiveSony" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\TestData\PossitiveLoginData.xml</Value>
+    </Setting>
+    <Setting Name="AdvancedSearchData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\VALIANTSIN\TAT LAB\TestFramework\TestFramework\TestData\AdvansedSearch.xml</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

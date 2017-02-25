@@ -11,7 +11,7 @@ namespace FrameworkTests.DataProviders
     {
         public static IEnumerable Possitive()
         {
-            var data = Users.Deserialize(SettingsPaths.Default.PossitiveLoginData);
+            var data = Users.Deserialize(SettingsPaths.Default.positiveSony);
             foreach (Login currentUser in data.users)
             {
                 yield return new TestCaseData(currentUser.userName, currentUser.password);

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TestFramework.WD;
 using TestFramework.JournalPageObjects;
+using OpenQA.Selenium;
 
 namespace TestFramework.Steps
 {
@@ -12,7 +13,7 @@ namespace TestFramework.Steps
     {
         JournalPage JournalPage = new JournalPage();
         SearchResultPage SearchResultPage = new SearchResultPage();
-
+        AdvancedSearchPage AdvancedSearchPage = new AdvancedSearchPage();
         public void OpenJournal(string journalName)
         {
             JournalPage.NavigateHere(journalName);
@@ -35,6 +36,15 @@ namespace TestFramework.Steps
         public void CloseBrowser()
         {
             WebDriver.KillDriver();
+        }
+        public void OpenAdvancedSearchPageInCurrentJournal(string journalName)
+        {
+            AdvancedSearchPage.NavigateAdvancedSearchPage(journalName);
+        }
+        public void AdvancedSearchByKeywords(string request, int textBoxNumber)
+        {
+            IWebElement keywordInput = AdvancedSearchPage.KeywordInput(textBoxNumber);
+            AdvancedSearchPage.EnterRequestToKeywordInput(request,keywordInput);
         }
     }
 }

@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFramework", "TestFramework\TestFramework.csproj", "{C76DA35A-3F40-4AD3-BE29-1F8DDD9DF8AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFrameworkTests", "TestFrameworkTests\TestFrameworkTests.csproj", "{BB6D8815-7D64-4A27-B804-B0ED84B86996}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkTests", "FrameworkTests\FrameworkTests.csproj", "{60981B15-3136-4818-ACCB-324CEB6EE805}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{C76DA35A-3F40-4AD3-BE29-1F8DDD9DF8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C76DA35A-3F40-4AD3-BE29-1F8DDD9DF8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C76DA35A-3F40-4AD3-BE29-1F8DDD9DF8AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB6D8815-7D64-4A27-B804-B0ED84B86996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB6D8815-7D64-4A27-B804-B0ED84B86996}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB6D8815-7D64-4A27-B804-B0ED84B86996}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB6D8815-7D64-4A27-B804-B0ED84B86996}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60981B15-3136-4818-ACCB-324CEB6EE805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60981B15-3136-4818-ACCB-324CEB6EE805}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60981B15-3136-4818-ACCB-324CEB6EE805}.Release|Any CPU.ActiveCfg = Release|Any CPU

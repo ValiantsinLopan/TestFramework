@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="BatchPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\VALIANTSIN\TAT LAB\TestFramework task\Styling\Responsive-Batch-6.xlsx</Value>
+      <Value Profile="(Default)">D:\Data for training\Styling\Responsive-Batch-6.xlsx</Value>
     </Setting>
     <Setting Name="bfb" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
